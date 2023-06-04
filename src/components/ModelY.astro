@@ -1,0 +1,26 @@
+---
+import Section from './Section.astro';
+import LinkButton from './LinkButton.astro';
+---
+
+<Section color="black" title="Model Y" subTitle="Concertar una prueba de conducción">
+  <div slot="footer">
+    <div class="flex justify-center gap-6">
+      <LinkButton buttonText="Explorar Inventario" />
+
+      <LinkButton
+        buttonText="Prueba de conducción"
+        classButtons="bg-gray-900 text-sm rounded font-medium inline-flex text-white px-16 py-1 items-center hover:bg-white hover:text-black transition-colors duration-300"
+      />
+    </div>
+  </div>
+
+  <div slot="background" class="absolute top-0 bottom-0 h-full w-full z-10">
+    <img
+      alt="Model Y"
+      class="h-full w-full object-cover object-center bg-image"
+      src="/Model-Y.avif"
+      id="bg-image-modely"
+    />
+  </div>
+</Section>

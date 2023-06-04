@@ -1,0 +1,13 @@
+---
+const { buttonText, classButtons } = Astro.props;
+---
+
+<div>
+  <a
+    href="#"
+    class={classButtons ||
+      'border-[3px] border-white bg-white/5 backdrop-blur-sm text-sm text-white rounded px-16 py-1 inline-block hover:bg-white hover:text-black transition-colors duration-300'}
+  >
+    {buttonText}
+  </a>
+</div>
